@@ -1,0 +1,2 @@
+org.springframework.boot.autoconfigure.EnableAutoConfiguration=\
+  cn.jbinfo.integration.alioss.config.OSSAutoConfiguration

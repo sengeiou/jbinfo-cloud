@@ -1,0 +1,2 @@
+org.springframework.boot.autoconfigure.EnableAutoConfiguration=\
+  cn.jbinfo.cloud.jpa.conf.EnableJpaConf

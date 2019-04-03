@@ -1,0 +1,3 @@
+org.springframework.boot.autoconfigure.EnableAutoConfiguration=\
+cn.jbinfo.api.handler.ErrorController,\
+cn.jbinfo.conf.WebConfig

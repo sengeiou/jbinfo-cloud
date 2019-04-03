@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <parent>
+        <artifactId>jbinfo-cloud</artifactId>
+        <groupId>cn.jbinfo.cloud</groupId>
+        <version>1.0.0.0-20190401-001</version>
+    </parent>
+    <modelVersion>4.0.0</modelVersion>
+
+    <properties>
+        <java.version>1.8</java.version>
+        <springfox.version>2.7.0</springfox.version>
+        <commons-codec.version>1.10</commons-codec.version>
+        <com.google.zxing.version>3.2.1</com.google.zxing.version>
+        <springfox.version>2.7.0</springfox.version>
+        <druid.version>1.1.5</druid.version>
+        <com.esotericsoftware.version>4.0.1</com.esotericsoftware.version>
+        <!-- 文件拷贝时的编码 -->
+        <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+        <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
+        <maven.compiler.encoding>UTF-8</maven.compiler.encoding>
+        <mybatisplus-spring-boot-starter.version>1.0.4</mybatisplus-spring-boot-starter.version>
+        <spring-cloud.version>Finchley.M2</spring-cloud.version>
+        <docker-maven-plugin.version>1.0.0</docker-maven-plugin.version>
+        <docker.image.prefix>api-cloud</docker.image.prefix>
+        <jackson.version>2.9.2</jackson.version>
+    </properties>
+
+    <artifactId>jbinfo-cloud-api-parent</artifactId>
+    <packaging>pom</packaging>
+    <modules>
+        <module>cloud-api-base-model</module>
+        <module>cloud-api-interceptor</module>
+        <module>cloud-api-reactor</module>
+        <module>cloud-api-security</module>
+        <module>cloud-api-integration</module>
+        <module>cloud-cache</module>
+        <module>cloud-microservices</module>
+        <module>cloud-microservices-scala</module>
+    </modules>
+
+    <dependencyManagement>
+        <dependencies>
+            <dependency>
+                <groupId>org.springframework.cloud</groupId>
+                <artifactId>spring-cloud-dependencies</artifactId>
+                <version>${spring-cloud.version}</version>
+                <type>pom</type>
+                <scope>import</scope>
+            </dependency>
+        </dependencies>
+    </dependencyManagement>
+
+
+</project>
